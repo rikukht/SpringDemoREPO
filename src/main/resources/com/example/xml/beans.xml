@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context" 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	 >
+	
+	
 
-	<bean id="jugador1" class="com.example.sts.demoSTS.Jugador">
-		<property name="id" value="1"></property>
-		<property name="nombre" value="Ricardo"></property>
-		<property name="equipo" ref="betis"></property>
-		<property name="camiseta" ref="camiseta1"></property>
-	</bean>
-	
-	<bean id="betis" class="com.example.sts.demoSTS.Betis"></bean>
-	
-	<bean id="sevilla" class="com.example.sts.demoSTS.Sevilla"></bean>
-	
-	<bean id="camiseta1" class="com.example.sts.demoSTS.Camiseta">
-		<property name="id" value="1"></property>
-		<property name="numero" value="3"></property>
-		<property name="marca" ref="marca1"></property>
-	</bean>
-	
-	<bean id="marca1" class="com.example.sts.demoSTS.Marca">
-		<property name="id" value="1"></property>
-		<property name="nombre" value="nike"></property>
-	</bean>
 	
 </beans>

@@ -13,7 +13,7 @@ public class DemoStsApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoStsApplication.class, args);
 		
-		ClassPathXmlApplicationContext app = new ClassPathXmlApplicationContext("com/example/xml/beans.xml");
+		/*ClassPathXmlApplicationContext app = new ClassPathXmlApplicationContext("com/example/xml/beans.xml");
 		Jugador jug = (Jugador) app.getBean("jugador1");
 		
 		Scanner scn = new Scanner(System.in);
@@ -33,7 +33,7 @@ public class DemoStsApplication {
 		}
 		
 		System.out.println( jug.getNombre() + " " + jug.getEquipo().mostrar() + " " + jug.getCamiseta().getNumero() + " " + jug.getCamiseta().getMarca().getNombre());
-		((ConfigurableApplicationContext) app).close();
+		((ConfigurableApplicationContext) app).close();*/
 	}
 
 }

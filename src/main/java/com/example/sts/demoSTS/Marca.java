@@ -1,7 +1,12 @@
 package com.example.sts.demoSTS;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Marca {
 	private int id;
+	@Value ("Nike")
 	private String nombre;
 	
 	public int getId() {
